@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="$(SolutionDir)Etc\DefineConstants.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup> 
+  <ItemGroup>
+    <Compile Include="$(SolutionDir)Etc\AssemblyVersion.cs">
+      <SubType>Code</SubType>
+      <Link>Properties\AssemblyVersion.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <Import Condition="$(CustomBuildConstants.Contains(SIGN))" Project="$(SolutionDir)Etc\SignAssembly.targets" />
+</Project>

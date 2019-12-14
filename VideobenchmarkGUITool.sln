@@ -1,0 +1,77 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Videobenchmark.Client.WPF", "Client\Videobenchmark.Client.WPF\Videobenchmark.Client.WPF.csproj", "{43859100-4DDF-4557-8117-84233A276726}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Common", "1. Common", "{690926D4-3829-4A93-8E41-68F837F02B7D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Domain", "2. Domain", "{8B8F0919-EF52-4C72-8099-1C0476579686}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Application", "3. Application", "{EFD990FD-9648-46BE-A1FC-4B854C7548A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Presentation", "4. Presentation", "{13ABDCAF-5E33-4F27-92AB-3D30756C94BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Client", "5. Client", "{7CEB2382-4C95-4CDF-95AD-9FE6376F6770}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6. Setup", "6. Setup", "{17AF7B61-AFC1-47A9-956F-A4CB48339946}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0. Etc", "0. Etc", "{20C52088-60F9-4D12-9959-4271F4D216B4}"
+	ProjectSection(SolutionItems) = preProject
+		Etc\AssemblyVersion.cs = Etc\AssemblyVersion.cs
+		Etc\AssemblyVersion.tt = Etc\AssemblyVersion.tt
+		Etc\BuildVersion = Etc\BuildVersion
+		Etc\DefineConstants.props = Etc\DefineConstants.props
+		Etc\DesignTimeResources.xaml = Etc\DesignTimeResources.xaml
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Videobenchmark.Common.Core", "Common\Videobenchmark.Common.Core\Videobenchmark.Common.Core.csproj", "{FCFC8552-8118-474A-BA41-47FE063ECF8D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Videobenchmark.Domain.Core", "Domain\Videobenchmark.Domain.Core\Videobenchmark.Domain.Core.csproj", "{7EFE50DF-077F-44E5-81FF-53E5FA917DAB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Videobenchmark.Application.Core", "Application\Videobenchmark.Application.Core\Videobenchmark.Application.Core.csproj", "{A7843BAB-7995-4653-906A-11A9B0817545}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Videobenchmark.Presentation.WPF", "Presentation\Videobenchmark.Presentation.WPF\Videobenchmark.Presentation.WPF.csproj", "{201ACD2E-1DF1-459A-AA84-68D1F9A8CDD6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43859100-4DDF-4557-8117-84233A276726}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43859100-4DDF-4557-8117-84233A276726}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43859100-4DDF-4557-8117-84233A276726}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43859100-4DDF-4557-8117-84233A276726}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCFC8552-8118-474A-BA41-47FE063ECF8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCFC8552-8118-474A-BA41-47FE063ECF8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCFC8552-8118-474A-BA41-47FE063ECF8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCFC8552-8118-474A-BA41-47FE063ECF8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EFE50DF-077F-44E5-81FF-53E5FA917DAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EFE50DF-077F-44E5-81FF-53E5FA917DAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EFE50DF-077F-44E5-81FF-53E5FA917DAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EFE50DF-077F-44E5-81FF-53E5FA917DAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7843BAB-7995-4653-906A-11A9B0817545}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7843BAB-7995-4653-906A-11A9B0817545}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7843BAB-7995-4653-906A-11A9B0817545}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7843BAB-7995-4653-906A-11A9B0817545}.Release|Any CPU.Build.0 = Release|Any CPU
+		{201ACD2E-1DF1-459A-AA84-68D1F9A8CDD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{201ACD2E-1DF1-459A-AA84-68D1F9A8CDD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{201ACD2E-1DF1-459A-AA84-68D1F9A8CDD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{201ACD2E-1DF1-459A-AA84-68D1F9A8CDD6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{43859100-4DDF-4557-8117-84233A276726} = {7CEB2382-4C95-4CDF-95AD-9FE6376F6770}
+		{FCFC8552-8118-474A-BA41-47FE063ECF8D} = {690926D4-3829-4A93-8E41-68F837F02B7D}
+		{7EFE50DF-077F-44E5-81FF-53E5FA917DAB} = {8B8F0919-EF52-4C72-8099-1C0476579686}
+		{A7843BAB-7995-4653-906A-11A9B0817545} = {EFD990FD-9648-46BE-A1FC-4B854C7548A3}
+		{201ACD2E-1DF1-459A-AA84-68D1F9A8CDD6} = {13ABDCAF-5E33-4F27-92AB-3D30756C94BD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1FF71177-E10F-49EF-B885-DC41AF85D110}
+	EndGlobalSection
+EndGlobal

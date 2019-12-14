@@ -1,0 +1,31 @@
+﻿<#@ template debug="false" hostspecific="true" language="C#" #>
+<#@ output extension=".cs" #>
+<#@ assembly name="System.IO" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ assembly name="System.Xml" #>
+<#@ import namespace="System.Xml" #>
+
+<#
+var fullVersion = Host.ResolveParameterValue(null, null, "AssemblyVersion");
+#>
+
+using System.Reflection;
+
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("Videobenchmark.org")]
+[assembly: AssemblyCopyright("Copyright © Videobenchmark.org 2019")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+
+[assembly: AssemblyVersion(Videobenchmark.Version.AssemblyInfo.VERSION_STRING)]
+[assembly: AssemblyFileVersion(Videobenchmark.Version.AssemblyInfo.VERSION_STRING)]
+
+namespace Videobenchmark.Version
+{
+    internal static class AssemblyInfo
+    {
+        internal const string VERSION_STRING = "<#= fullVersion #>";
+    }
+}
